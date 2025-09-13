@@ -1,11 +1,14 @@
-import Image from "next/image";
+import React from 'react'
+import Navbar from '@/components/Navbar'
+import Hero from '@/components/sections/Hero'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main className="relative min-h-screen">
-      <h1>
-        Hello, Next.js 13.4 with TypeScript and Tailwind CSS!
-      </h1>
-    </main>
-  );
+    <div className='relative w-full min-h-screen'>
+      <Navbar />
+      <Hero />
+    </div>
+  )
 }
+
+export default HomePage
